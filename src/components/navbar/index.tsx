@@ -20,7 +20,7 @@ interface NavLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 }
 
 const handleAcheterClick = () => {
-  const whatsappUrl = `https://wa.me/+2250501310360`;
+  const whatsappUrl = `https://wa.me/+22969345509`;
   window.location.href = whatsappUrl;
 };
 
@@ -73,10 +73,10 @@ export default function WithAction() {
             {!isOpen && (
               <Image
                 rounded={'lg'}
-                height={100}
-                width={102}
+                height={50}
+                width={62}
                 objectFit={'cover'}
-                src={'images/logo.png'}
+                src={'https://static.hitek.fr/img/actualite/ill_m/782636289/goku.webp'}
                 alt="#"
               />
             )}
