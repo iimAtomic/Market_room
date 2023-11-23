@@ -1,0 +1,38 @@
+UserID (clé primaire)
+Nom
+Prénom
+Email
+Mot de passe (de préférence stocké de manière sécurisée, par exemple, avec une fonction de hachage)
+Autres informations liées à l'utilisateur (adresse, numéro de téléphone, etc.)
+Produits:
+
+ProduitID (clé primaire)
+Nom du Produit
+Description
+Prix
+Etat (neuf, comme neuf, usagé, etc.)
+Catégorie (vêtements, électronique, etc.)
+Image (URL de l'image ou stockée localement)
+Date de Mise en Ligne
+ID de l'Utilisateur (clé étrangère vers la table Utilisateurs)
+Transactions:
+
+TransactionID (clé primaire)
+ID de l'Acheteur (clé étrangère vers la table Utilisateurs)
+ID du Vendeur (clé étrangère vers la table Utilisateurs)
+ID du Produit (clé étrangère vers la table Produits)
+Prix de Vente
+Date de la Transaction
+Statut (en attente, complétée, annulée, etc.)
+Commentaires:
+
+CommentaireID (clé primaire)
+ID de l'Auteur (clé étrangère vers la table Utilisateurs)
+ID du Produit (clé étrangère vers la table Produits)
+Texte du Commentaire
+Note (facultatif)
+Wishlist (Liste de souhaits):
+
+WishlistID (clé primaire)
+ID de l'Utilisateur (clé étrangère vers la table Utilisateurs)
+ID du Produit (clé étrangère vers la table Produits)
